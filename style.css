@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #010758, #490d61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px; /* added padding for better mobile view */
+}
+
+.hero h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    text-align: center; /* added for better alignment */
+}
+
+.hero h1 span{
+    color: #ff2963;
+}
+
+textarea{
+    width: 100%;
+    max-width: 600px;
+    height: 250px;
+    background: #403d84;
+    color: #fff;
+    font-size: 15px;
+    border: 0;
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder{
+    font-size: 16px;
+    color: #ddd;
+}
+
+.row{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* added for better handling on smaller screens */
+}
+
+button{
+    background: #ff2963;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #403d84;
+    height: 50px;
+    padding: 0 20px;
+    outline: 0;
+    border: 0;
+    border-radius: 35px;
+    width: 100%; /* for full width on mobile */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 35px; /* adjust the heading font size */
+    }
+
+    textarea {
+        height: 200px; /* reduce the height of textarea */
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px; /* reduce button font size */
+        padding: 10px 20px; /* smaller button padding */
+    }
+
+    select {
+        height: 45px; /* adjust select height */
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px; /* further reduce heading size */
+    }
+
+    textarea {
+        height: 180px;
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    select {
+        height: 40px;
+        font-size: 12px;
+    }
+}
